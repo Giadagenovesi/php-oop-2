@@ -1,0 +1,13 @@
+header {
+    background-color: #ffd500;
+    font-size: 4rem;
+    padding: 0;
+}
+
+header i {
+    font-size: 4rem;
+}
+
+main {
+    background-color: rgba(234, 234, 228, 0.826);
+}
