@@ -46,8 +46,8 @@ $prod4 = new Product("Pollo di gomma", 10, new Category('Cane'), "https://img.fr
                     <div class="card" >
                         <img src="<?php echo $prod1->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $prod1->prodName  ?></h5>
-                            <p class="card-text"><?php echo $prod1->price; ?></p>
+                            <h5 class="card-title">Prodotto: <?php echo $prod1->prodName  ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $prod1->price; ?> Euro</p>
                             <p class="card-text"><?php echo $prod1->category->category?></p>
                         </div>
                     </div>
@@ -56,8 +56,8 @@ $prod4 = new Product("Pollo di gomma", 10, new Category('Cane'), "https://img.fr
                     <div class="card" >
                         <img src="<?php echo $prod2->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $prod2->prodName  ?></h5>
-                            <p class="card-text"><?php echo $prod2->price; ?></p>
+                            <h5 class="card-title">Prodotto: <?php echo $prod2->prodName  ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $prod2->price; ?>Euro</p>
                             <p class="card-text"><?php echo $prod2->category->category?></p>
                         </div>
                     </div>
@@ -66,8 +66,8 @@ $prod4 = new Product("Pollo di gomma", 10, new Category('Cane'), "https://img.fr
                     <div class="card" >
                         <img src="<?php echo $prod3->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $prod3->prodName  ?></h5>
-                            <p class="card-text"><?php echo $prod3->price; ?></p>
+                            <h5 class="card-title">Prodotto: <?php echo $prod3->prodName  ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $prod3->price; ?> Euro</p>
                             <p class="card-text"><?php echo $prod3->category->category?></p>
                         </div>
                     </div>
@@ -76,8 +76,8 @@ $prod4 = new Product("Pollo di gomma", 10, new Category('Cane'), "https://img.fr
                     <div class="card" >
                         <img src="<?php echo $prod4->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $prod4->prodName  ?></h5>
-                            <p class="card-text"><?php echo $prod4->price; ?></p>
+                            <h5 class="card-title">Prodotto: <?php echo $prod4->prodName  ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $prod4->price; ?> Euro</p>
                             <p class="card-text"><?php echo $prod4->category->category?></p>
                         </div>
                     </div>

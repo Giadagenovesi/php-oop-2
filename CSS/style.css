@@ -18,5 +18,5 @@ main {
 
 .card img {
     padding: 1rem;
-    max-height: 320px;
+    height: 320px;
 }
