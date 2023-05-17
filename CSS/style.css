@@ -11,3 +11,12 @@ header i {
 main {
     background-color: rgba(234, 234, 228, 0.826);
 }
+
+.card {
+    height: 100%;
+}
+
+.card img {
+    padding: 1rem;
+    max-height: 320px;
+}
