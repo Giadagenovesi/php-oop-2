@@ -1,13 +1,13 @@
 <?php 
 
 class Category {
-    public $name;
+    public $category;
 
     /**
      * @param string $_name
      */
-    function __construct($_name)
+    function __construct($_category)
     {
-        $this->name = $_name;
+        $this->category = $_category;
     }
 }

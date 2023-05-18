@@ -1,11 +1,10 @@
 <?php 
 require_once __DIR__ . "/Models/Product.php";
 require_once __DIR__ . "/Models/Category.php";
-
-$prod1 = new Product("Cuccia", 60, new Category('Cane'), "https://www.gardenbedettishop.com/16599-large_default/cuccia-per-cani-charles-50-ferplast.jpg");
-$prod2 = new Product("Lettiera", 20, new Category('Gatto'), "https://patatofriendly.com/wp-content/uploads/2020/11/Lettiera-robotizzata-per-gatti-grandi.jpg");
-$prod3 = new Product("Crocchette", 19, new Category('Gatto'), "https://www.gardenstuff.it/49009-large_default/crocchette-per-gatto-adulto-sterilizzato-natural-trainer-prosciutto-15-kg.jpg");
-$prod4 = new Product("Pollo di gomma", 10, new Category('Cane'), "https://img.fruugo.com/product/9/65/439896659_max.jpg");
+require_once __DIR__ . "/Models/Food.php";
+require_once __DIR__ . "/Models/Toys.php";
+require_once __DIR__ . "/Models/Accessories.php";
+require_once __DIR__ . "/Models/db.php";
 
 ?>
 
@@ -41,48 +40,19 @@ $prod4 = new Product("Pollo di gomma", 10, new Category('Cane'), "https://img.fr
 
     <main>
         <div class="container">
-            <div class="row row-cols-4 py-5">
+            <div class="row row-cols-4 py-5 g-4">
+                <?php foreach ($products as $prod) {?>
                 <div class="col">
                     <div class="card" >
-                        <img src="<?php echo $prod1->image ?>" class="card-img-top" alt="...">
+                        <img src="<?php echo $prod->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Prodotto: <?php echo $prod1->prodName  ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $prod1->price; ?> Euro</p>
-                            <p class="card-text"><?php echo $prod1->category->category?></p>
+                            <h5 class="card-title">Prodotto: <?php echo $prod->prodName  ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $prod->price; ?> Euro</p>
+                            <p class="card-text"><?php echo $prod->category->category?></p>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" >
-                        <img src="<?php echo $prod2->image ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Prodotto: <?php echo $prod2->prodName  ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $prod2->price; ?>Euro</p>
-                            <p class="card-text"><?php echo $prod2->category->category?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" >
-                        <img src="<?php echo $prod3->image ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Prodotto: <?php echo $prod3->prodName  ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $prod3->price; ?> Euro</p>
-                            <p class="card-text"><?php echo $prod3->category->category?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" >
-                        <img src="<?php echo $prod4->image ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Prodotto: <?php echo $prod4->prodName  ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $prod4->price; ?> Euro</p>
-                            <p class="card-text"><?php echo $prod4->category->category?></p>
-                        </div>
-                    </div>
-                </div>
-                
+                </div> 
+            <?php }; ?>    
             </div> 
         </div>
 

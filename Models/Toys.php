@@ -1,7 +1,10 @@
 <?php 
 require_once __DIR__. "/Product.php";
+require_once __DIR__. "/Category.php";
 
 class Toys extends Product {
+    
+    public $material;
 
     function __construct($_image, $_prodName, $_price, Category $_category)
     {
